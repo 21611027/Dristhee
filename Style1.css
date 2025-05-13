@@ -1,0 +1,174 @@
+/*Global Reset & Base Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../Images/Homepage.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+/*Header & Navigation*/
+header {
+  background-color: #002855cc;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /*Center nav links*/
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#nav-links li a:hover {
+  background-color: #1d3557;
+  border-radius: 5px;
+}
+
+
+
+
+/*Hero Image Section*/
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.hero-image img,
+.AI-in-Web-Development img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 2rem auto;
+}
+
+
+
+/*Content Section*/
+.content h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #550000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+
+/*Intro Section*/
+.intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #21e0dd86;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(59, 166, 157, 0.573);
+}
+
+
+
+/*Footer*/
+footer {
+  background-color: #002855cc;
+  color: white;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+footer td {
+  padding: 0.7rem;
+  border-bottom: 1px solid #fcbf49;
+  font-size: 1rem;
+  color: #f8f9fa;
+}
+
+footer td a {
+  color: #3c0808;
+  text-decoration: underline;
+}
+
+
+
+
+/*Responsive Navigation*/
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+
+  }
+}
+

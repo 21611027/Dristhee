@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSS Reader – Week 5</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Multi-Feed RSS Reader</h1>
+
+    <label for="feed-selector">Choose a feed:</label>
+    <select id="feed-selector" aria-label="RSS Feed Selector">
+      <option value="https://hacks.mozilla.org/rss">Mozilla Hacks</option>
+      <option value="http://feeds.bbci.co.uk/news/world/rss.xml">BBC World News</option>
+    </select>
+
+    <div id="content" aria-live="polite"></div>
+  </div>
+
+  <script src="Script3.js"></script>
+</body>
+</html>

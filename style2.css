@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/Blu.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px;
+}
+
+
+.game-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.choice {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  padding: 12px 24px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.choice:hover {
+  background-color: #d3e0ea;
+  transform: scale(1.05);
+}
+
+#result {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  min-height: 40px;
+  transition: opacity 0.4s;
+}
+
+.scoreboard {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#reset:hover {
+  background-color: #ff1a1a;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flatland Business Advisor</title>
+  <link rel="stylesheet" href="flatland.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Flatland Business Advisor</h1>
+    <p>Think well, Open your mind Then Anwser with the right decisions!!!</p>
+
+    <form id="advisor-form">
+      <label for="budget">What's your current business budget?</label>
+      <select id="budget">
+        <option value="">Select</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="goal">What is your main business goal?</label>
+      <select id="goal">
+        <option value="">Select</option>
+        <option value="growth">Expand the business</option>
+        <option value="stability">Maintain current level</option>
+        <option value="marketing">Boost marketing</option>
+      </select>
+
+      <button type="submit">Get Advice</button>
+    </form>
+
+    <div id="result" class="advice-box"></div>
+  </div>
+
+  <script src="flatland.js"></script>
+</body>
+</html>
